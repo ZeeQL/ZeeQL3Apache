@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E808F44D1E926D2300022CE9 /* ApacheRequestAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E808F44C1E926D2300022CE9 /* ApacheRequestAdaptor.swift */; };
+		E85336F71E92B948003AB2A5 /* libAPRAdaptor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EB94CD1E5F32360058D8D1 /* libAPRAdaptor.dylib */; };
+		E8687CA61E609B3200D62ABF /* APRAdaptorOGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8687CA51E609B3200D62ABF /* APRAdaptorOGoTests.swift */; };
+		E8687CA81E609C9C00D62ABF /* APRAdaptorSQLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8687CA71E609C9C00D62ABF /* APRAdaptorSQLiteTests.swift */; };
+		E86D59601ECCA36E0048CA34 /* ContactsDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86D595F1ECCA36E0048CA34 /* ContactsDBModel.swift */; };
+		E8A834FD1ECDAF5900CCDD82 /* AdaptorActiveRecordTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A834FC1ECDAF5900CCDD82 /* AdaptorActiveRecordTestCase.swift */; };
+		E8A835021ECDAFBC00CCDD82 /* APRSQLite3ActiveRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A835011ECDAFBC00CCDD82 /* APRSQLite3ActiveRecordTests.swift */; };
+		E8A835041ECDB61A00CCDD82 /* APRPostgreSQLActiveRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A835031ECDB61A00CCDD82 /* APRPostgreSQLActiveRecordTests.swift */; };
+		E8BA82CD1E6828A300F09D76 /* AdaptorOGoTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BA82CC1E6828A300F09D76 /* AdaptorOGoTestCase.swift */; };
+		E8D95FC91E91A7AD0072FF09 /* libZeeQL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8D95FC81E91A7AD0072FF09 /* libZeeQL.dylib */; };
+		E8D95FF41E91B3330072FF09 /* APRAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FEE1E91B3330072FF09 /* APRAdaptor.swift */; };
+		E8D95FF51E91B3330072FF09 /* APRAdaptorChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FEF1E91B3330072FF09 /* APRAdaptorChannel.swift */; };
+		E8D95FF61E91B3330072FF09 /* APRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FF01E91B3330072FF09 /* APRError.swift */; };
+		E8D95FF71E91B3330072FF09 /* APRPostgreSQLAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FF11E91B3330072FF09 /* APRPostgreSQLAdaptor.swift */; };
+		E8D95FF81E91B3330072FF09 /* APRSQLExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FF21E91B3330072FF09 /* APRSQLExpression.swift */; };
+		E8D95FF91E91B3330072FF09 /* APRSQLite3Adaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D95FF31E91B3330072FF09 /* APRSQLite3Adaptor.swift */; };
+		E8DDEE2C1E5FA12C00EC1DD8 /* libAPRAdaptor.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EB94CD1E5F32360058D8D1 /* libAPRAdaptor.dylib */; };
+		E8DDEE341E5FA1C100EC1DD8 /* APRSQLExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DDEE321E5FA1C100EC1DD8 /* APRSQLExpressionTests.swift */; };
+		E8EB9E621EA1239C00C6DA54 /* PostgreSQLModelFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB9E611EA1239C00C6DA54 /* PostgreSQLModelFetch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E85336F51E92B942003AB2A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D2794B1E5504FA00453BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8EB94CC1E5F32360058D8D1;
+			remoteInfo = APRAdaptor;
+		};
+		E8DDEE2D1E5FA12C00EC1DD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8D2794B1E5504FA00453BBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8EB94CC1E5F32360058D8D1;
+			remoteInfo = APRAdaptor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E808F4401E926BD100022CE9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		E808F4451E926C5A00022CE9 /* libApacheZeeQLAdaptor.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libApacheZeeQLAdaptor.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E808F44C1E926D2300022CE9 /* ApacheRequestAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApacheRequestAdaptor.swift; path = Sources/ApacheZeeQLAdaptor/ApacheRequestAdaptor.swift; sourceTree = SOURCE_ROOT; };
+		E8687CA51E609B3200D62ABF /* APRAdaptorOGoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRAdaptorOGoTests.swift; path = Tests/APRAdaptorTests/APRAdaptorOGoTests.swift; sourceTree = SOURCE_ROOT; };
+		E8687CA71E609C9C00D62ABF /* APRAdaptorSQLiteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRAdaptorSQLiteTests.swift; path = Tests/APRAdaptorTests/APRAdaptorSQLiteTests.swift; sourceTree = SOURCE_ROOT; };
+		E86D595F1ECCA36E0048CA34 /* ContactsDBModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsDBModel.swift; path = Tests/APRAdaptorTests/ContactsDBModel.swift; sourceTree = SOURCE_ROOT; };
+		E8A834FC1ECDAF5900CCDD82 /* AdaptorActiveRecordTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptorActiveRecordTestCase.swift; path = Tests/APRAdaptorTests/AdaptorActiveRecordTestCase.swift; sourceTree = SOURCE_ROOT; };
+		E8A835011ECDAFBC00CCDD82 /* APRSQLite3ActiveRecordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRSQLite3ActiveRecordTests.swift; path = Tests/APRAdaptorTests/APRSQLite3ActiveRecordTests.swift; sourceTree = SOURCE_ROOT; };
+		E8A835031ECDB61A00CCDD82 /* APRPostgreSQLActiveRecordTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRPostgreSQLActiveRecordTests.swift; path = Tests/APRAdaptorTests/APRPostgreSQLActiveRecordTests.swift; sourceTree = SOURCE_ROOT; };
+		E8BA82CC1E6828A300F09D76 /* AdaptorOGoTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AdaptorOGoTestCase.swift; path = Tests/APRAdaptorTests/AdaptorOGoTestCase.swift; sourceTree = SOURCE_ROOT; };
+		E8CF06451E645B68008E5847 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E8D279721E5505DE00453BBE /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Base.xcconfig; path = xcconfig/Base.xcconfig; sourceTree = "<group>"; };
+		E8D95FC81E91A7AD0072FF09 /* libZeeQL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libZeeQL.dylib; path = ../ZeeQL/build/Debug/libZeeQL.dylib; sourceTree = "<group>"; };
+		E8D95FEE1E91B3330072FF09 /* APRAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRAdaptor.swift; path = Sources/APRAdaptor/APRAdaptor.swift; sourceTree = "<group>"; };
+		E8D95FEF1E91B3330072FF09 /* APRAdaptorChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRAdaptorChannel.swift; path = Sources/APRAdaptor/APRAdaptorChannel.swift; sourceTree = "<group>"; };
+		E8D95FF01E91B3330072FF09 /* APRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRError.swift; path = Sources/APRAdaptor/APRError.swift; sourceTree = "<group>"; };
+		E8D95FF11E91B3330072FF09 /* APRPostgreSQLAdaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRPostgreSQLAdaptor.swift; path = Sources/APRAdaptor/APRPostgreSQLAdaptor.swift; sourceTree = "<group>"; };
+		E8D95FF21E91B3330072FF09 /* APRSQLExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRSQLExpression.swift; path = Sources/APRAdaptor/APRSQLExpression.swift; sourceTree = "<group>"; };
+		E8D95FF31E91B3330072FF09 /* APRSQLite3Adaptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRSQLite3Adaptor.swift; path = Sources/APRAdaptor/APRSQLite3Adaptor.swift; sourceTree = "<group>"; };
+		E8DDEE271E5FA12C00EC1DD8 /* APRAdaptorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APRAdaptorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8DDEE321E5FA1C100EC1DD8 /* APRSQLExpressionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APRSQLExpressionTests.swift; path = Tests/APRAdaptorTests/APRSQLExpressionTests.swift; sourceTree = SOURCE_ROOT; };
+		E8DDEE331E5FA1C100EC1DD8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/APRAdaptorTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		E8EB94CD1E5F32360058D8D1 /* libAPRAdaptor.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAPRAdaptor.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EB9E611EA1239C00C6DA54 /* PostgreSQLModelFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostgreSQLModelFetch.swift; path = Sources/APRAdaptor/PostgreSQLModelFetch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E808F4421E926C5A00022CE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E85336F71E92B948003AB2A5 /* libAPRAdaptor.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DDEE241E5FA12C00EC1DD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DDEE2C1E5FA12C00EC1DD8 /* libAPRAdaptor.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EB94CA1E5F32360058D8D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D95FC91E91A7AD0072FF09 /* libZeeQL.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E808F4491E926CC700022CE9 /* Apache mod_dbd Adaptor */ = {
+			isa = PBXGroup;
+			children = (
+				E808F44C1E926D2300022CE9 /* ApacheRequestAdaptor.swift */,
+			);
+			name = "Apache mod_dbd Adaptor";
+			path = Sources/ZeeQLApacheRequestAdaptor;
+			sourceTree = "<group>";
+		};
+		E8A834FE1ECDAF5D00CCDD82 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				E8BA82CC1E6828A300F09D76 /* AdaptorOGoTestCase.swift */,
+				E8A834FC1ECDAF5900CCDD82 /* AdaptorActiveRecordTestCase.swift */,
+			);
+			name = Generic;
+			sourceTree = "<group>";
+		};
+		E8D2794A1E5504FA00453BBE = {
+			isa = PBXGroup;
+			children = (
+				E8CF06451E645B68008E5847 /* README.md */,
+				E808F4401E926BD100022CE9 /* Package.swift */,
+				E8EB94C61E5F31FF0058D8D1 /* Standalone Adaptor */,
+				E808F4491E926CC700022CE9 /* Apache mod_dbd Adaptor */,
+				E8D279671E55059800453BBE /* Tests */,
+				E8D279711E5505D100453BBE /* Configurations */,
+				E8D279541E5504FA00453BBE /* Products */,
+				E8D95FC71E91A7AD0072FF09 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8D279541E5504FA00453BBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8EB94CD1E5F32360058D8D1 /* libAPRAdaptor.dylib */,
+				E8DDEE271E5FA12C00EC1DD8 /* APRAdaptorTests.xctest */,
+				E808F4451E926C5A00022CE9 /* libApacheZeeQLAdaptor.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8D279671E55059800453BBE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E8DDEE281E5FA12C00EC1DD8 /* APRAdaptorTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E8D279711E5505D100453BBE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				E8D279721E5505DE00453BBE /* Base.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		E8D95FC71E91A7AD0072FF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8D95FC81E91A7AD0072FF09 /* libZeeQL.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8DDEE281E5FA12C00EC1DD8 /* APRAdaptorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8A834FE1ECDAF5D00CCDD82 /* Generic */,
+				E8DDEE321E5FA1C100EC1DD8 /* APRSQLExpressionTests.swift */,
+				E8687CA51E609B3200D62ABF /* APRAdaptorOGoTests.swift */,
+				E8687CA71E609C9C00D62ABF /* APRAdaptorSQLiteTests.swift */,
+				E8A835011ECDAFBC00CCDD82 /* APRSQLite3ActiveRecordTests.swift */,
+				E8A835031ECDB61A00CCDD82 /* APRPostgreSQLActiveRecordTests.swift */,
+				E86D595F1ECCA36E0048CA34 /* ContactsDBModel.swift */,
+				E8DDEE331E5FA1C100EC1DD8 /* Info.plist */,
+			);
+			name = APRAdaptorTests;
+			path = ../APRAdaptorTests;
+			sourceTree = "<group>";
+		};
+		E8EB94C61E5F31FF0058D8D1 /* Standalone Adaptor */ = {
+			isa = PBXGroup;
+			children = (
+				E8D95FEE1E91B3330072FF09 /* APRAdaptor.swift */,
+				E8D95FEF1E91B3330072FF09 /* APRAdaptorChannel.swift */,
+				E8D95FF01E91B3330072FF09 /* APRError.swift */,
+				E8D95FF21E91B3330072FF09 /* APRSQLExpression.swift */,
+				E8D95FF11E91B3330072FF09 /* APRPostgreSQLAdaptor.swift */,
+				E8D95FF31E91B3330072FF09 /* APRSQLite3Adaptor.swift */,
+				E8EB9E611EA1239C00C6DA54 /* PostgreSQLModelFetch.swift */,
+			);
+			name = "Standalone Adaptor";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E808F4431E926C5A00022CE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EB94CB1E5F32360058D8D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E808F4441E926C5A00022CE9 /* ApacheZeeQLAdaptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E808F4461E926C5A00022CE9 /* Build configuration list for PBXNativeTarget "ApacheZeeQLAdaptor" */;
+			buildPhases = (
+				E808F4411E926C5A00022CE9 /* Sources */,
+				E808F4421E926C5A00022CE9 /* Frameworks */,
+				E808F4431E926C5A00022CE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E85336F61E92B942003AB2A5 /* PBXTargetDependency */,
+			);
+			name = ApacheZeeQLAdaptor;
+			productName = ZeeQLApacheRequestAdaptor;
+			productReference = E808F4451E926C5A00022CE9 /* libApacheZeeQLAdaptor.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		E8DDEE261E5FA12C00EC1DD8 /* APRAdaptorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8DDEE2F1E5FA12C00EC1DD8 /* Build configuration list for PBXNativeTarget "APRAdaptorTests" */;
+			buildPhases = (
+				E8DDEE231E5FA12C00EC1DD8 /* Sources */,
+				E8DDEE241E5FA12C00EC1DD8 /* Frameworks */,
+				E8DDEE251E5FA12C00EC1DD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8DDEE2E1E5FA12C00EC1DD8 /* PBXTargetDependency */,
+			);
+			name = APRAdaptorTests;
+			productName = APRAdaptorTests;
+			productReference = E8DDEE271E5FA12C00EC1DD8 /* APRAdaptorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8EB94CC1E5F32360058D8D1 /* APRAdaptor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8EB94CE1E5F32360058D8D1 /* Build configuration list for PBXNativeTarget "APRAdaptor" */;
+			buildPhases = (
+				E8EB94C91E5F32360058D8D1 /* Sources */,
+				E8EB94CA1E5F32360058D8D1 /* Frameworks */,
+				E8EB94CB1E5F32360058D8D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APRAdaptor;
+			productName = APRAdaptor;
+			productReference = E8EB94CD1E5F32360058D8D1 /* libAPRAdaptor.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8D2794B1E5504FA00453BBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ZeeZide GmbH";
+				TargetAttributes = {
+					E808F4441E926C5A00022CE9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E8DDEE261E5FA12C00EC1DD8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E8EB94CC1E5F32360058D8D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8D2794E1E5504FA00453BBE /* Build configuration list for PBXProject "ZeeQL3Apache" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8D2794A1E5504FA00453BBE;
+			productRefGroup = E8D279541E5504FA00453BBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8EB94CC1E5F32360058D8D1 /* APRAdaptor */,
+				E808F4441E926C5A00022CE9 /* ApacheZeeQLAdaptor */,
+				E8DDEE261E5FA12C00EC1DD8 /* APRAdaptorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8DDEE251E5FA12C00EC1DD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E808F4411E926C5A00022CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E808F44D1E926D2300022CE9 /* ApacheRequestAdaptor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DDEE231E5FA12C00EC1DD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8A834FD1ECDAF5900CCDD82 /* AdaptorActiveRecordTestCase.swift in Sources */,
+				E8DDEE341E5FA1C100EC1DD8 /* APRSQLExpressionTests.swift in Sources */,
+				E8687CA61E609B3200D62ABF /* APRAdaptorOGoTests.swift in Sources */,
+				E8687CA81E609C9C00D62ABF /* APRAdaptorSQLiteTests.swift in Sources */,
+				E8A835041ECDB61A00CCDD82 /* APRPostgreSQLActiveRecordTests.swift in Sources */,
+				E86D59601ECCA36E0048CA34 /* ContactsDBModel.swift in Sources */,
+				E8A835021ECDAFBC00CCDD82 /* APRSQLite3ActiveRecordTests.swift in Sources */,
+				E8BA82CD1E6828A300F09D76 /* AdaptorOGoTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8EB94C91E5F32360058D8D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D95FF91E91B3330072FF09 /* APRSQLite3Adaptor.swift in Sources */,
+				E8D95FF81E91B3330072FF09 /* APRSQLExpression.swift in Sources */,
+				E8D95FF71E91B3330072FF09 /* APRPostgreSQLAdaptor.swift in Sources */,
+				E8D95FF51E91B3330072FF09 /* APRAdaptorChannel.swift in Sources */,
+				E8EB9E621EA1239C00C6DA54 /* PostgreSQLModelFetch.swift in Sources */,
+				E8D95FF41E91B3330072FF09 /* APRAdaptor.swift in Sources */,
+				E8D95FF61E91B3330072FF09 /* APRError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E85336F61E92B942003AB2A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8EB94CC1E5F32360058D8D1 /* APRAdaptor */;
+			targetProxy = E85336F51E92B942003AB2A5 /* PBXContainerItemProxy */;
+		};
+		E8DDEE2E1E5FA12C00EC1DD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8EB94CC1E5F32360058D8D1 /* APRAdaptor */;
+			targetProxy = E8DDEE2D1E5FA12C00EC1DD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E808F4471E926C5A00022CE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E808F4481E926C5A00022CE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8D279551E5504FA00453BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D279721E5505DE00453BBE /* Base.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				REEXPORTED_LIBRARY_PATHS = "";
+			};
+			name = Debug;
+		};
+		E8D279561E5504FA00453BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D279721E5505DE00453BBE /* Base.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				REEXPORTED_LIBRARY_PATHS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		E8DDEE301E5FA12C00EC1DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/APRAdaptorTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.zeeql.APRAdaptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E8DDEE311E5FA12C00EC1DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/APRAdaptorTests/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = de.zeezide.zeeql.APRAdaptorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E8EB94CF1E5F32360058D8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E8EB94D01E5F32360058D8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E808F4461E926C5A00022CE9 /* Build configuration list for PBXNativeTarget "ApacheZeeQLAdaptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E808F4471E926C5A00022CE9 /* Debug */,
+				E808F4481E926C5A00022CE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D2794E1E5504FA00453BBE /* Build configuration list for PBXProject "ZeeQL3Apache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D279551E5504FA00453BBE /* Debug */,
+				E8D279561E5504FA00453BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8DDEE2F1E5FA12C00EC1DD8 /* Build configuration list for PBXNativeTarget "APRAdaptorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8DDEE301E5FA12C00EC1DD8 /* Debug */,
+				E8DDEE311E5FA12C00EC1DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8EB94CE1E5F32360058D8D1 /* Build configuration list for PBXNativeTarget "APRAdaptor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8EB94CF1E5F32360058D8D1 /* Debug */,
+				E8EB94D01E5F32360058D8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8D2794B1E5504FA00453BBE /* Project object */;
+}
