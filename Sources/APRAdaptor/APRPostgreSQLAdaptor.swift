@@ -190,4 +190,41 @@ public final class APRPostgreSQLExpression: APRSQLExpression {
     
     statement += " RETURNING " + columns
   }
+
+  override open func columnTypeStringForAttribute(_ attr: Attribute) -> String {
+    if let isAutoIncrement = attr.isAutoIncrement, isAutoIncrement {
+      return "SERIAL"
+    }
+    
+    return super.columnTypeStringForAttribute(attr)
+  }
+}
+
+open class APRPostgreSQLSchemaSynchronizationFactory
+             : SchemaSynchronizationFactory
+{
+  
+  /// Supported: ALTER TABLE hello ALTER COLUMN doit TYPE INT;
+  override open
+  var supportsDirectColumnCoercion               : Bool { return true }
+  
+  /// Supported: ALTER TABLE hello DROP COLUMN doit;
+  override open
+  var supportsDirectColumnDeletion               : Bool { return true }
+  
+  /// Supported: ALTER TABLE x ADD COLUMN y TEXT;
+  override open
+  var supportsDirectColumnInsertion              : Bool { return true  }
+
+  override open
+  var supportsDirectForeignKeyModification       : Bool { return true }
+  
+  /// Supported: ALTER TABLE table ALTER COLUMN column SET [NOT] NULL;
+  override open
+  var supportsDirectColumnNullRuleModification   : Bool { return true }
+  
+  /// Supported: ALTER TABLE hello RENAME COLUMN doit TO testit;
+  override open
+  var supportsDirectColumnRenaming               : Bool { return true }
+  
 }
