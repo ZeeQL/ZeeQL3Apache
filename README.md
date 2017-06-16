@@ -2,6 +2,11 @@
   <img src="http://zeezide.com/img/ZeeQLIcon1024-QL.svg"
        align="right" width="128" height="128" />
 </h2>
+![Apache 2](https://img.shields.io/badge/apache-2-yellow.svg)
+![Swift3](https://img.shields.io/badge/swift-3-blue.svg)
+![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
+![tuxOS](https://img.shields.io/badge/os-tuxOS-green.svg?style=flat)
+![Travis](https://travis-ci.org/ZeeQL/ZeeQL3Apache.svg?branch=develop)
 
 This library contains ZeeQL database adaptors based on the Apache Portable
 Runtime DBD module. APR DBD is kinda like a mini-ODBC/JDBC and has drivers
@@ -56,6 +61,11 @@ step into the APR code).
 To install APR on Linux, do something like this:
 
     sudo apt-get install libaprutil1-dbd-sqlite3 libaprutil1-dbd-pgsql
+
+### Documentation
+
+ZeeQL Documentation can be found at:
+[docs.zeeql.io](http://docs.zeeql.io/).
 
 ### Who
 
