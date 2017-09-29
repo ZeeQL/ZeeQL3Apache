@@ -106,7 +106,7 @@
 				E808F44C1E926D2300022CE9 /* ApacheRequestAdaptor.swift */,
 			);
 			name = "Apache mod_dbd Adaptor";
-			path = Sources/ZeeQLApacheRequestAdaptor;
+			path = Sources/ApacheZeeQLAdaptor;
 			sourceTree = "<group>";
 		};
 		E8A834FE1ECDAF5D00CCDD82 /* Generic */ = {
