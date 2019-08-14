@@ -4,7 +4,8 @@
 </h2>
 
 ![Apache 2](https://img.shields.io/badge/apache-2-yellow.svg)
-![Swift4](https://img.shields.io/badge/swift-4-blue.svg)
+![Swift4.2](https://img.shields.io/badge/swift-4.2-blue.svg)
+![Swift5](https://img.shields.io/badge/swift-5-blue.svg)
 ![macOS](https://img.shields.io/badge/os-macOS-green.svg?style=flat)
 ![tuxOS](https://img.shields.io/badge/os-tuxOS-green.svg?style=flat)
 ![Travis](https://travis-ci.org/ZeeQL/ZeeQL3Apache.svg?branch=develop)
