@@ -3,7 +3,7 @@
 //  ZeeQL
 //
 //  Created by Helge Hess on 23/02/17.
-//  Copyright © 2017 ZeeZide GmbH. All rights reserved.
+//  Copyright © 2017-2019 ZeeZide GmbH. All rights reserved.
 //
 
 import ZeeQL
@@ -11,7 +11,7 @@ import ZeeQL
 public final class APRPostgreSQLAdaptor : APRAdaptor {
   
   let _connectString : String
-  override open var connectString : String { return _connectString }
+  override public var connectString : String { return _connectString }
   
   public init(host: String = "127.0.0.1", port: Int = 5432,
               database: String = "postgres",
@@ -31,7 +31,8 @@ public final class APRPostgreSQLAdaptor : APRAdaptor {
   }
 
   override
-  open func primaryCreateChannel(pool: OpaquePointer, connection: OpaquePointer)
+  public func primaryCreateChannel(pool: OpaquePointer,
+                                   connection: OpaquePointer)
               throws -> APRAdaptorChannel
   {
     return try APRPostgreSQLAdaptorChannel(adaptor: self, pool: pool,
@@ -84,8 +85,8 @@ public final class APRPostgreSQLAdaptorChannel: APRAdaptorChannel {
   // MARK: - Insert w/ auto-increment support
 
   override
-  open func insertRow(_ row: AdaptorRow, _ entity: Entity?, refetchAll: Bool)
-              throws -> AdaptorRow
+  public func insertRow(_ row: AdaptorRow, _ entity: Entity?, refetchAll: Bool)
+                throws -> AdaptorRow
   {
     let attributes : [ Attribute ]? = {
       guard let entity = entity else { return nil }
@@ -125,15 +126,15 @@ public final class APRPostgreSQLExpressionFactory: SQLExpressionFactory {
   
   public static let shared = APRPostgreSQLExpressionFactory()
   
-  override open func createExpression(_ entity: Entity?) -> SQLExpression {
+  override public func createExpression(_ entity: Entity?) -> SQLExpression {
     return APRPostgreSQLExpression(entity: entity)
   }
 
   
-  open func insertReturningStatementForRow(_ row    : AdaptorRow,
-                                           _ entity : Entity?,
-                                           _ attributes : [Attribute]?)
-            -> SQLExpression
+  public func insertReturningStatementForRow(_ row    : AdaptorRow,
+                                             _ entity : Entity?,
+                                             _ attributes : [Attribute]?)
+              -> SQLExpression
   {
     // This even works for non-entity, just 'returning' keys
     let e = APRPostgreSQLExpression(entity: entity)
@@ -144,15 +145,15 @@ public final class APRPostgreSQLExpressionFactory: SQLExpressionFactory {
 
 public final class APRPostgreSQLExpression: APRSQLExpression {
   
-  override open var sqlStringForCaseInsensitiveLike : String? {
+  override public var sqlStringForCaseInsensitiveLike : String? {
     return "ILIKE"
   }
   
   
   // MARK: - Insert w/ returning
 
-  open func prepareInsertReturningExpressionWithRow
-              (_ row: AdaptorRow, attributes attrs: [Attribute]?)
+  public func prepareInsertReturningExpressionWithRow
+                (_ row: AdaptorRow, attributes attrs: [Attribute]?)
   {
     // Note: we need the entity for the table name ...
     guard entity != nil else { return }
@@ -191,7 +192,8 @@ public final class APRPostgreSQLExpression: APRSQLExpression {
     statement += " RETURNING " + columns
   }
 
-  override open func columnTypeStringForAttribute(_ attr: Attribute) -> String {
+  override public func columnTypeStringForAttribute(_ attr: Attribute) -> String
+  {
     if let isAutoIncrement = attr.isAutoIncrement, isAutoIncrement {
       return "SERIAL"
     }

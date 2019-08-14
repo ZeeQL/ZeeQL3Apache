@@ -33,11 +33,15 @@ public struct APRDBDError : Swift.Error {
 
 public extension apr_status_t {
   
-  public var statusMessage : String? {
+  var statusMessage : String? {
     let size = 1024
     let buf = UnsafeMutablePointer<Int8>.allocate(capacity: size)
     apr_strerror(self, buf, size)
-    buf.deallocate(capacity: size)
+    #if swift(>=4.2)
+      buf.deallocate()
+    #else
+      buf.deallocate(capacity: size)
+    #endif
     return String(cString: buf)
   }
   

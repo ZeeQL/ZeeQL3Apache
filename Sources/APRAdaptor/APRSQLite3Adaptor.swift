@@ -70,7 +70,7 @@ public final class APRSQLite3AdaptorChannel: APRAdaptorChannel {
   // MARK: - Insert w/ auto-increment support
 
   override
-  open func insertRow(_ row: AdaptorRow, _ entity: Entity?, refetchAll: Bool)
+  public func insertRow(_ row: AdaptorRow, _ entity: Entity?, refetchAll: Bool)
               throws -> AdaptorRow
   {
     // Mostly a copy of ZeeQL.SQLite3AdaptorChannel, but we want to keep those
